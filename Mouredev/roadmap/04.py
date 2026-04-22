@@ -102,3 +102,14 @@ spanish: Crea un programa que analice dos palabras diferentes y realice comproba
         - Isogramas
 """
 
+def check(word1: str, word2: str):
+    
+    # palíndromos
+
+    print(f"{word1} is palindrome?: {word1 == word1[::-1]:}")
+    print(f"{word2} is palindrome?: {word1 == word1[::-1]:}")
+    
+    # anagramas
+    # isogramas
+check("radar", "radar")
+    
