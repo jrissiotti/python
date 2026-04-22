@@ -6,12 +6,12 @@ Operations
 
 s1 = "Hello"
 s2 = "Python"
-# concatenation
 
+# concatenation
 print(s1 + " " + s2 + "!")
 
 # repetition
-print(s13)
+print(s1 * 5)
 
 # indexing
 print(s1[0] + s1[2] + s2[4])
