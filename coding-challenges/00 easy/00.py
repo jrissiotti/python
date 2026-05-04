@@ -2,8 +2,9 @@
 
 def at_least_one_true(first_value: bool, second_value: bool) -> bool:
     
-    if first_value or second_value:
-        return True
-    else:
-        return False
-at_least_one_true(True, False)
+    return first_value or second_value
+
+print(f"True or True: {at_least_one_true(True, True)}")     #True
+print(f"True or False: {at_least_one_true(True, False)}")   #True
+print(f"False or False: {at_least_one_true(False, False)}") #False
+print(f"False or True: {at_least_one_true(False, True)}")   #True
