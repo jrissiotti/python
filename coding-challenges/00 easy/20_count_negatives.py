@@ -11,12 +11,9 @@ Notes:
 """
 
 def count_negatives(numbers: list[int]) -> int:
-    count = 0
-    
-    for element in numbers:
-        if element < 0:
-            count += 1
+    return sum(1 for n in numbers if n < 0)
 
+# Examples
 print(count_negatives([-1, 2, -3, 4, 0])) # 2
 print(count_negatives([1, 2, 3]))         # 0
 print(count_negatives([-5, -10, -1]))     # 3

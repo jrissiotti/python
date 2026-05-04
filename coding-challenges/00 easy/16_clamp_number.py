@@ -10,15 +10,10 @@ Notes:
 """
 
 def clamp_number(num: int, min_val: int, max_val: int) -> int:
-    
-    if num < min_val:
-        return print(min_val)
-    elif num > max_val:
-        return print(max_val)
-    else:
-        return print(num)
+    return print (max(min_val, min(num, max_val)))
 
-clamp_number(5, 1, 10)  # 5  → within range
-clamp_number(0, 1, 10)  # 1  → less than min, returns min
-clamp_number(15, 1, 10) # 10 → greater than max, returns max
-clamp_number(1, 1, 10)  # 1  → equal to lower limit, it is valid
+# Examples
+clamp_number(5, 1, 10)  # 5
+clamp_number(0, 1, 10)  # 1
+clamp_number(15, 1, 10) # 10
+clamp_number(1, 1, 10)  # 1

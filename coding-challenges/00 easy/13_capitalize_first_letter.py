@@ -10,12 +10,10 @@ Notes
 """
 
 def capitalize_first_letter(text: str) -> str:
+    return text[0].upper() + text[1:] if text else ""
 
-    if text == "":
-        return print("")
-    return print(text[0].upper() + text[1:])
-
-capitalize_first_letter("hola")
-capitalize_first_letter("mundo")
-capitalize_first_letter("TypeScript")
-capitalize_first_letter("")
+# Examples
+print(f"'{capitalize_first_letter('hello')}'")      # 'Hello'
+print(f"'{capitalize_first_letter('world')}'")      # 'World'
+print(f"'{capitalize_first_letter('TypeScript')}'") # 'TypeScript'
+print(f"'{capitalize_first_letter('')}'")           # ''

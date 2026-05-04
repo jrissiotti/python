@@ -10,13 +10,9 @@ Notes:
 """
 
 def count_uppercase(text: str) -> int:
-    count = 0
-    for element in text:
-        if element == element.upper() and element.isalpha():
-            count += 1
+    return sum(1 for char in text if char.isupper())
 
-    return count
-
+# Examples
 print(count_uppercase("Hola Mundo"))        # 2
 print(count_uppercase("TYPESCRIPT"))        # 10
 print(count_uppercase("sin mayusculas"))    # 0

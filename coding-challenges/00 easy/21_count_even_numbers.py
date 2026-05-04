@@ -13,6 +13,7 @@ Notes:
 def count_even_numbers(numbers: list[int]) -> int:
     return sum (1 for element in numbers if element % 2 == 0)
 
+# Examples
 print(count_even_numbers([1, 2, 3, 4, 5, 6])) # 3
 print(count_even_numbers([1, 3, 5]))          # 0
 print(count_even_numbers([]))                 # 0

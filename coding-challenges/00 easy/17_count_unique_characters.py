@@ -12,19 +12,11 @@ Notes:
 """
 
 def count_unique_chars(text: str) -> int:
+    return len(set(text))
 
-
-    unique_chars = []
-
-    for element in text:
-        if element in unique_chars:
-            continue
-        unique_chars.append(element)
-    return len(unique_chars)
-
-# Test cases
-print(count_unique_chars("hello"))    # 4  (h, e, l, o)
-print(count_unique_chars("aabbcc"))   # 3  (a, b, c)
-print(count_unique_chars("abcABC"))   # 6  (a, b, c, A, B, C)
+# Examples
+print(count_unique_chars("hello"))    # 4
+print(count_unique_chars("aabbcc"))   # 3
+print(count_unique_chars("abcABC"))   # 6
 print(count_unique_chars(""))         # 0
-print(count_unique_chars("a A b B")) # 5  (including space)
+print(count_unique_chars("a A b B"))  # 5
